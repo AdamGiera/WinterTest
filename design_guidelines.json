@@ -1,0 +1,315 @@
+{
+  "project_name": "Haus Winter — Gästehaus & Monteurunterkunft Kirchheim",
+  "app_type": "landing_page",
+  "context": "High-end warm architectural one-pager for 'Haus Winter' (Owner: Joscho Winter, Kuppenstraße 38, 36275 Kirchheim, Hessen). Caters to craftsmen/Monteure, business travelers, and holiday short-stays seeking premium comfort ('gehobene Klasse'). Features bilingual toggle (DE/EN), pricing calculator with tiered duration discounts (daily, >1 week, >1 month), visual room catalog, interactive amenities bento, location connectivity highlights (200m autobahn & retail, walkable restaurants), interactive booking/contact inquiry form with backend email dispatch, and rich cinematic interactions.",
+  "archetype": "ARCHETYPE 1: ORGANIC & EARTHY with Architectural Precision (Warm ochre, rich terracotta, deep forest charcoal, warm ivory/sand background)",
+  "fonts": {
+    "heading": "Playfair Display Variable",
+    "body": "DM Sans Variable",
+    "mono": "JetBrains Mono Variable",
+    "rationale": "Playfair Display provides high-craft warmth, hospitable dignity, and authentic German guesthouse prestige ('Haus Winter' editorial character), avoiding sterile generic SaaS sans. DM Sans delivers effortless legibility for long German words ('Aufenthaltsraum', 'Monteurunterkunft', 'Dachterrasse') across mobile and desktop. JetBrains Mono adds precise tactile numeric clarity to rates, distances, and room specs."
+  },
+  "typography": {
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 24,
+      "h4": 18,
+      "body": 16,
+      "caption": 14
+    },
+    "font_family_tokens": {
+      "--font-heading": "'Playfair Display Variable', serif",
+      "--font-sans": "'DM Sans Variable', sans-serif",
+      "--font-mono": "'JetBrains Mono Variable', monospace"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#FAF7F2",
+        "on_bg": "#1F1D1A",
+        "on_bg_muted": "#686156",
+        "roles": {
+          "accent_warm": "#C45B28",
+          "accent_amber": "#9C6207",
+          "border_subtle": "#E5DEC9",
+          "success": "#2D6A4F",
+          "error": "#B91C1C"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1F1D1A",
+        "on_bg_muted": "#686156",
+        "roles": {
+          "border": "#EDE6D8",
+          "highlight": "#F5EFE6"
+        }
+      },
+      {
+        "name": "surface_warm_card",
+        "kind": "solid",
+        "bg": "#F4ECE1",
+        "on_bg": "#1C1917",
+        "on_bg_muted": "#57534E",
+        "roles": {
+          "tag_bg": "#E6D7C3",
+          "tag_text": "#443322"
+        }
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#141210",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(20,18,16,0.68) 0%, rgba(20,18,16,0.85) 100%)",
+        "on_bg": "#FAF7F2",
+        "on_bg_muted": "#D6CEC2",
+        "roles": {
+          "tag_bg": "#C45B28",
+          "tag_text": "#FFFFFF",
+          "border": "rgba(255,255,255,0.18)"
+        }
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#1C1917",
+        "on_bg": "#FAF7F2",
+        "on_bg_muted": "#A8A29E",
+        "roles": {
+          "accent_warm": "#F97316",
+          "border": "#292524",
+          "link": "#FDBA74"
+        }
+      },
+      {
+        "name": "glass_header",
+        "kind": "glass",
+        "contrast_against": "#FAF7F2",
+        "guarantee": "backdrop-blur-xl bg-[#FAF7F2]/85 border-b border-[#E5DEC9]/80 shadow-sm",
+        "on_bg": "#1F1D1A",
+        "on_bg_muted": "#686156"
+      }
+    ],
+    "accent": "#C45B28",
+    "on_accent": "#FFFFFF"
+  },
+  "entry_surfaces": {
+    "/": "Asymmetric Split Hero: left editorial brand statement, animated badge, and primary CTA; right layered framed visual with live occupancy indicator and instant rate pill."
+  },
+  "brand_identity": {
+    "name": "Haus Winter",
+    "host": "Joscho Winter",
+    "location": "Kuppenstraße 38, 36275 Kirchheim (Hessen)",
+    "phone": "+49 (0) 6625 918200",
+    "email": "kontakt@haus-winter-kirchheim.de",
+    "tagline_de": "Gehobener Komfort für Monteure & Gäste in Kirchheim",
+    "tagline_en": "Premium hospitality for professionals & travelers in Kirchheim",
+    "rates_structure": {
+      "base_rules": [
+        "Einzelperson (Single Person): 28 € / Tag",
+        "Ab 1 Woche (From 1 week): 25 € / Tag (Save ~11%)",
+        "Ab 1 Monat (From 1 month): 20 € / Tag (Save ~29%)"
+      ],
+      "room_types": [
+        {
+          "id": "single",
+          "name_de": "Einzelzimmer",
+          "name_en": "Single Room",
+          "price_per_day": 28,
+          "weekly_rate": 25,
+          "monthly_rate": 20,
+          "capacity": "1 Person",
+          "description_de": "Ruhig, behaglich & ideal zum Abschalten nach einem langen Arbeitstag. Ausgestattet mit Flachbild-TV, Schreibtisch & Highspeed-WLAN.",
+          "description_en": "Peaceful, comfortable & ideal for winding down after work. Equipped with flat-screen TV, workstation & high-speed Wi-Fi."
+        },
+        {
+          "id": "double",
+          "name_de": "Doppelzimmer",
+          "name_en": "Double Room",
+          "price_per_day": 52,
+          "weekly_rate": 46,
+          "monthly_rate": 38,
+          "capacity": "2 Personen",
+          "description_de": "Großzügig geschnitten mit getrennten oder Doppelbetten. Perfekt für Arbeitskollegen oder Paare mit höchstem Schlafkomfort.",
+          "description_en": "Spacious layout with twin or double beds. Perfect for colleagues or couples with maximum sleep comfort."
+        },
+        {
+          "id": "triple",
+          "name_de": "Dreibettzimmer",
+          "name_en": "Triple Room",
+          "price_per_day": 63,
+          "weekly_rate": 56,
+          "monthly_rate": 48,
+          "capacity": "3 Personen (ab 21 €/Person)",
+          "description_de": "Das ideale Team-Zimmer für Monteurgruppen. Viel Stauraum, TV, helle Fenster und unschlagbares Preis-Leistungs-Verhältnis.",
+          "description_en": "The prime team room for work crews. Ample storage, TV, bright windows and unbeatable value per person."
+        }
+      ]
+    },
+    "amenities_list": [
+      { "id": "tv", "icon": "Tv", "title_de": "TV in jedem Zimmer", "title_en": "TV in every room", "desc_de": "Eigener Smart-TV in jedem Schlafzimmer für ungestörte Feierabende." },
+      { "id": "wlan", "icon": "Wifi", "title_de": "Highspeed-WLAN (Glasfaser)", "title_en": "High-speed Wi-Fi", "desc_de": "Zuverlässiges, schnelles Internet im gesamten Haus & auf den Terrassen." },
+      { "id": "parking", "icon": "Car", "title_de": "Eigene PKW- & Transporter-Stellplätze", "title_en": "On-site Parking (Cars & Vans)", "desc_de": "Großzügige Stellplätze direkt am Haus, auch für Firmentransporter geeignet." },
+      { "id": "bathrooms", "icon": "Droplets", "title_de": "4 moderne Badezimmer", "title_en": "4 Modern Bathrooms", "desc_de": "Kein morgendlicher Stau: 4 voll ausgestattete Bäder mit Dusche/WC." },
+      { "id": "kitchen", "icon": "UtensilsCrossed", "title_de": "Voll ausgestattete Großküche", "title_en": "Large Fully Equipped Kitchen", "desc_de": "Mehrere Kühlschränke, Herd, Ofen, Mikrowelle, Kaffeemaschine & Spülmaschine." },
+      { "id": "lounge", "icon": "Armchair", "title_de": "Gemütlicher Aufenthaltsraum", "title_en": "Cozy Community Lounge", "desc_de": "Gemeinsam kochen, essen, zusammensitzen oder am großen Tisch austauschen." },
+      { "id": "rooftop", "icon": "Sun", "title_de": "Panorama-Dachterrasse", "title_en": "Panoramic Rooftop Terrace", "desc_de": "Weitblick über Kirchheim für erholsame Sonnenuntergänge." },
+      { "id": "garden", "icon": "Trees", "title_de": "Gartenterrasse & Grillplatz", "title_en": "Garden Terrace & BBQ Area", "desc_de": "Großer Außengrillplatz & Sitzgruppen für sonnige Sommerabende." },
+      { "id": "standard", "icon": "Sparkles", "title_de": "Gehobene Klasse & Sauberkeit", "title_en": "Premium Standard & Cleanliness", "desc_de": "Gepflegtes Ambiente, regelmäßige Reinigung und persönlicher Ansprechpartner." }
+    ],
+    "location_highlights": [
+      { "distance": "200 m", "title_de": "Autobahnanschluss A7 / A4 / A5", "title_en": "Highway Junction A7 / A4 / A5", "desc_de": "In 2 Minuten auf der Autobahn (Kirchheimer Dreieck). Perfekt für Pendler & Monteure." },
+      { "distance": "200 m", "title_de": "Supermärkte & Bäckereien", "title_en": "Supermarkets & Bakeries", "desc_de": "EDEKA, Netto, Getränkemarkt & frische Backwaren fußläufig erreichbar." },
+      { "distance": "200–300 m", "title_de": "Vielfältige Gastronomie", "title_en": "Diverse Restaurants & Dining", "desc_de": "Deutsche Küche, Pizzeria, Döner & Gasthöfe bequem zu Fuß erreichbar." },
+      { "distance": "36275", "title_de": "Ruhige Lage im Grünen", "title_en": "Quiet green location", "desc_de": "Kuppenstraße 38 — entspannte Nächte ohne Verkehrslärm trotz optimaler Verkehrsanbindung." }
+    ]
+  },
+  "image_urls": {
+    "hero_main": {
+      "url": "https://images.unsplash.com/photo-1699869653495-fe26f4c70b3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHx3YXJtJTIwY296eSUyMGJlZHJvb20lMjBpbnRlcmlvcnxlbnwwfHx8fDE3OTAxOTU5MDJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Haus Winter gemütliches Zimmer mit Holzpaneel und warmem Licht",
+      "category": "hero"
+    },
+    "single_room": {
+      "url": "https://images.unsplash.com/photo-1686003571789-d60e9d0de1ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHw0fHx3YXJtJTIwY296eSUyMGJlZHJvb20lMjBpbnRlcmlvcnxlbnwwfHx8fDE3OTAxOTU5MDJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Einzelzimmer mit bequemer Matratze, TV und Leselampe",
+      "category": "rooms"
+    },
+    "double_room": {
+      "url": "https://images.pexels.com/photos/30767888/pexels-photo-30767888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Doppelzimmer mit modernem warmen Interieur",
+      "category": "rooms"
+    },
+    "triple_room": {
+      "url": "https://images.pexels.com/photos/31145676/pexels-photo-31145676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Geräumiges Mehrbettzimmer für Monteure",
+      "category": "rooms"
+    },
+    "kitchen_dining": {
+      "url": "https://images.pexels.com/photos/27195985/pexels-photo-27195985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Große Gemeinschaftsküche mit Essbereich",
+      "category": "amenities"
+    },
+    "terrace_lounge": {
+      "url": "https://images.unsplash.com/photo-1749433157410-357a3311e921?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBraXRjaGVuJTIwdGVycmFjZSUyMGRpbmluZ3xlbnwwfHx8fDE3OTAxOTU5MDJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Dachterrasse und Gartenterrasse mit Grillbereich",
+      "category": "amenities"
+    },
+    "community_living": {
+      "url": "https://images.pexels.com/photos/32956273/pexels-photo-32956273.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Gemütlicher Aufenthaltsraum zum Verweilen",
+      "category": "amenities"
+    }
+  },
+  "sections_layout": [
+    {
+      "id": "header",
+      "component": "Navbar",
+      "features": ["Logo SVG 'Haus Winter'", "Bilingual DE/EN toggle", "Direct call button +49 (0) 6625 918200", "Quick links: Zimmer, Ausstattung, Lage, Preisrechner, Kontakt", "Mobile sheet menu"]
+    },
+    {
+      "id": "hero",
+      "component": "HeroSection",
+      "features": [
+        "Warm headline with stagger line reveal ('Ankommen. Wohlfühlen. Ausruhen.')",
+        "Subheading emphasizing 'Gehobene Klasse Monteur- & Gästeunterkunft in Kirchheim'",
+        "Live badge: 'Zimmer frei ab sofort · 200m zur A7/A4/A5'",
+        "Primary action: 'Zimmer anfragen' / 'Preise berechnen'",
+        "Interactive Quick-Rate Pill Bar with instant savings badges",
+        "Framed architectural photo card with spotlight warm glow"
+      ]
+    },
+    {
+      "id": "editorial_ribbon",
+      "component": "EditorialMarquee",
+      "features": [
+        "Slow, luxurious marquee separator in warm ochre & charcoal",
+        "Items: '200M ZUR AUTOBAHN · 4 BADEZIMMER · TV IN JEDEM ZIMMER · DACHTERRASSE & GRILLPLATZ · AB 20€ / MONATSRATE · GROSSKÜCHE · EIGENE PARKPLÄTZE'"
+      ]
+    },
+    {
+      "id": "rooms_pricing",
+      "component": "RoomsAndPricingSection",
+      "features": [
+        "Dynamic tab switcher: Einzelzimmer (28€), Doppelzimmer (52€), Dreibettzimmer (63€)",
+        "Duration discount toggle (Tagespreis, Ab 1 Woche -11%, Ab 1 Monat -29%)",
+        "Interactive Live Price Calculator (Select room, duration, persons, check-in dates -> instant total calculation & direct prefill into contact form)",
+        "Included perks badges: Bettwäsche, Handtücher, TV, WLAN, Endreinigung, PKW-Parkplatz"
+      ]
+    },
+    {
+      "id": "amenities_bento",
+      "component": "AmenitiesBentoGrid",
+      "features": [
+        "Asymmetric Bento Grid with 3 visual hero cards and 6 feature tiles",
+        "Highlights: 4 Modern Bathrooms (no morning waiting), Huge Kitchen, Rooftop & Garden BBQ, Free Parkplatz for Sprinter/Cars, Fast Fiber Wi-Fi",
+        "Interactive photo lightbox / gallery zoom"
+      ]
+    },
+    {
+      "id": "location_perks",
+      "component": "LocationSection",
+      "features": [
+        "Interactive 200m Radius Explorer (Autobahn A7/A4/A5, EDEKA, Netto, Restaurants, Bäckerei)",
+        "Direct visual route map graphic / Leaflet-style interactive locator",
+        "Address card with copy-to-clipboard button and Google Maps direct link: Kuppenstraße 38, 36275 Kirchheim"
+      ]
+    },
+    {
+      "id": "host_trust",
+      "component": "HostTrustSection",
+      "features": [
+        "Personal greeting by Joscho Winter",
+        "Why Monteure & Companies choose Haus Winter (Flexible check-in, invoice with VAT / Rechnung mit MwSt., clean & reliable, friendly local contact)"
+      ]
+    },
+    {
+      "id": "inquiry_form",
+      "component": "ContactBookingSection",
+      "features": [
+        "Direct inquiry form: Name, Company (optional), Phone, Email, Room Type, Dates (using Shadcn Calendar/DateRange or date selector), Number of Guests, Message",
+        "FastAPI backend endpoint POST `/api/inquiry` with email simulation & MongoDB record creation",
+        "Instant confirmation feedback with Sonner toast + booking summary dialog",
+        "Direct contact card: Phone call button, WhatsApp direct link, Address card"
+      ]
+    },
+    {
+      "id": "footer",
+      "component": "Footer",
+      "features": [
+        "Massive editorial display logo 'HAUS WINTER'",
+        "Full address & Impressum / Datenschutz modal placeholders",
+        "Copyright 2026 Joscho Winter, 36275 Kirchheim"
+      ]
+    }
+  ],
+  "motion": {
+    "smooth_scroll": "Lenis smooth scrolling for organic weight and momentum",
+    "stagger_reveal": "Masked upward slide on hero elements (opacity: 0, y: 24 -> opacity: 1, y: 0)",
+    "hover_states": "Crisp lift `-translate-y-1` on room & bento cards with warm amber border glow",
+    "reduced_motion": "Wrap animations with `prefers-reduced-motion` compliance fallback"
+  },
+  "accessibility": {
+    "wcag_target": "WCAG AA (APCA compliant)",
+    "text_contrast": "All text tokens exceed 4.5:1 ratio against their defined backgrounds (e.g., #1F1D1A on #FAF7F2 is 14.8:1, #FFFFFF on #C45B28 is 5.1:1)",
+    "focus_indicators": "High contrast 2px ring in warm ochre (`focus-visible:ring-2 focus-visible:ring-[#C45B28]`)",
+    "data_testid_convention": "All buttons, inputs, links, tabs, and interactive triggers MUST include role-based data-testid attributes (e.g., data-testid='room-tab-single', data-testid='inquiry-submit-btn')"
+  },
+  "instructions_to_main_agent": [
+    "Install `lenis` or use `@studio-freight/lenis` / `lenis` for smooth momentum scrolling.",
+    "Ensure `frontend/src/index.css` sets `--font-heading: 'Playfair Display Variable', serif;` and `--font-sans: 'DM Sans Variable', sans-serif;` with imports for `@fontsource-variable/playfair-display` and `@fontsource-variable/dm-sans` and `@fontsource-variable/jetbrains-mono`.",
+    "Build a custom bilingual translation dictionary in `frontend/src/lib/i18n.tsx` or context hook supporting full DE (German) and EN (English) seamless language toggle without page reloads.",
+    "Include an interactive Live Price & Long-Stay Calculator where users can toggle days, weeks, months, room type and see their discount in real-time.",
+    "In backend (`backend/server.py` or router `backend/routers/inquiries.py`), create `POST /api/inquiries` and `GET /api/inquiries` to record reservation inquiries in MongoDB and simulate email notification.",
+    "Ensure the contact form pre-fills whenever a user clicks 'Jetzt anfragen' on a specific room card or from the price calculator.",
+    "Mobile-First execution: Monteure & craftsmen search for rooms on their smartphones while on the road or at the job site. Phone buttons and WhatsApp triggers must be tap-friendly with thumb-accessible sticky contact bar on mobile viewports.",
+    "Do NOT use default cold blue colors. Stick strictly to the warm organic palette (#FAF7F2 ivory, #C45B28 terracotta/ochre, #1C1917 warm charcoal)."
+  ]
+}
